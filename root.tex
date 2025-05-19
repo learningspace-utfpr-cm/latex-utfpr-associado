@@ -1,0 +1,41 @@
+\documentclass[a4paper,12pt,oneside,brazil]{doccv}
+
+\title{Relatório de Atividades Docentes}
+\author{Nome do professor}
+\address{Campus -- PR}
+\fulldate{Mês de ano}
+
+\usepackage[space]{grffile}
+
+\usepackage{fancyhdr}
+\chead{}
+\lhead{}
+\rhead{\thepage}
+\cfoot{}
+\lfoot{}
+\rfoot{}
+\setlength{\headheight}{50pt}
+
+\usepackage{pdfpages}
+\includepdfset{pages=-,scale=.9,pagecommand={\thispagestyle{fancy}}}
+
+
+\begin{document}
+
+%------------------------------------------------------------------------------
+
+\frontmatter
+\maketitle
+
+
+\mainmatter
+\tableofcontents
+\input{formacao}
+\input{ensino}
+\input{producao}
+\input{atividades}
+
+\appendix{}
+\input{apendice}
+
+\end{document}
